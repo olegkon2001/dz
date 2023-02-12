@@ -21,7 +21,7 @@ def main():
         print(info)
 
     data = get_filtered_data(data,  filtered_empty_from=FILTERED_EMPTY_FROM)
-    data = get_last_values(data, COUNT_LAST_WALUES)
+    data = get_last_values(data, COUNT_LAST_VALUES)
     data = get_formatted_data(data)
 
     print("INFO: Вывод данных")
