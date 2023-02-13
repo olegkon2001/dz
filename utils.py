@@ -39,9 +39,9 @@ def get_formatted_data(data):
         from_info, from_bill = "", ""
         if "from" in row:
             sender = row["from"].split()
-        from_bill = sender.pop(-1)
-        from_bill = f"{from_bill[:4]} {from_bill[4:6]}** **** {from_bill[-4:]}"
-        from_info = " ".join(sender)
+            from_bill = sender.pop(-1)
+            from_bill = f"{from_bill[:4]} {from_bill[4:6]}** **** {from_bill[-4:]}"
+            from_info = " ".join(sender)
         to = f"{row['to'].split()[0]} **{row['to'][-4]}"
         operation_amount = f"{row['operationAmount']['amount']} {row['operationAmount']['currency']['name']}"
 
