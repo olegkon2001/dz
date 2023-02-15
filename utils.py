@@ -47,4 +47,4 @@ def get_formatted_data(data):
 {from_info} {from_bill} -> {to}
 {operation_amount}
 """)
-        return
+        return formatted_data
